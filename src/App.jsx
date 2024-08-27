@@ -1,17 +1,18 @@
 
 // Iconos
-import { IoBusinessOutline, 
-  IoAddCircleOutline, 
-  IoClipboardOutline, 
-  IoKeyOutline, 
-  IoTicketOutline, 
-  IoPersonAddOutline, 
-  IoPeopleOutline, 
-  IoHomeOutline, 
-  IoCopyOutline, 
+import {
+  IoBusinessOutline,
+  IoAddCircleOutline,
+  IoClipboardOutline,
+  IoKeyOutline,
+  IoTicketOutline,
+  IoPersonAddOutline,
+  IoPeopleOutline,
+  IoHomeOutline,
+  IoCopyOutline,
   IoNewspaperOutline,
   IoCashOutline,
-  IoCellularOutline 
+  IoCellularOutline
 } from "react-icons/io5";
 
 function App() {
@@ -24,27 +25,25 @@ function App() {
 
           <div className=" flex items-center justify-center">
             <div className="relative flex w-full h-[20rem] max-w-[45rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-              <div className="relative m-0 w-2/6 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+              <div className=" m-0 w-2/6 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+                <div className=' text-black py-3 text-center'>
+                  <p className='text-xl shadow-black underline'>PROPIEDADES</p>
+                </div>
                 <img
                   src="https://pedragonzalezyciasa.com.ar/wp-content/themes/neve-fse/assets/img/neve-fse-img05.jpg"
                   alt="image"
                   className="h-full w-full object-cover"
                 />
-                <div className=' absolute text-black py-5 inset-0 text-center'>
-                  <p className='text-xl shadow-black underline'>PROPIEDADES</p>
-                </div>
               </div>
               <div className="p-6">
-                {/* <h2 className="mb-4 block font-sans text-base font-semibold uppercase leading-relaxed tracking-normal text-black antialiased">
-                            Propiedades
-                        </h2> */}
-                <div className='flex flex-wrap '>
+                {/* Le agregue GRID y 2 col tambien cambie los botones. Para los posteriores es igual*/}
+                <div className='grid grid-cols-2  '>
                   <a className="inline-block " href="#">
 
                     <IoBusinessOutline className='m-auto' size={45} />
 
                     <button
-                      className=" flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs  uppercase text-black transition-all  disabled:opacity-50 disabled:shadow-none"
+                      className="  w-full rounded-lg py-3 px-6 align-middle font-sans text-xs  uppercase text-black "
                       type="button"
                     >
                       Nuevo Proyecto
@@ -54,7 +53,7 @@ function App() {
                   <a className="inline-block" href="#">
                     <IoAddCircleOutline className='m-auto' size={45} />
                     <button
-                      className="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs  uppercase text-black transition-all  disabled:opacity-50 disabled:shadow-none"
+                      className="  w-full rounded-lg py-3 px-6 align-middle font-sans text-xs  uppercase text-black "
                       type="button"
                     >
                       Ingreso Pid
@@ -63,7 +62,7 @@ function App() {
                   <a className="inline-block" href="#">
                     <IoClipboardOutline className='m-auto' size={45} />
                     <button
-                      className="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs  uppercase text-black transition-all  disabled:opacity-50 disabled:shadow-none"
+                      className="  w-full rounded-lg py-3 px-6 align-middle font-sans text-xs  uppercase text-black "
                       type="button"
                     >
                       Listado Propiedades
@@ -72,7 +71,7 @@ function App() {
                   <a className="inline-block" href="#">
                     <IoTicketOutline className='m-auto' size={45} />
                     <button
-                      className="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs  uppercase text-black transition-all  disabled:opacity-50 disabled:shadow-none"
+                      className="  w-full rounded-lg py-3 px-6 align-middle font-sans text-xs  uppercase text-black "
                       type="button"
                     >
                       Ingresar Promocion
@@ -81,7 +80,7 @@ function App() {
                   <a className="inline-block" href="#">
                     <IoKeyOutline className='m-auto' size={45} />
                     <button
-                      className="flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs  uppercase text-black-500 transition-all  disabled:opacity-50 disabled:shadow-none"
+                      className="  w-full rounded-lg py-3 px-6 align-middle font-sans text-xs  uppercase text-black "
                       type="button"
                     >
                       Cambio Estado
@@ -96,15 +95,15 @@ function App() {
           {/* ---- */}
           <div className=" flex items-center justify-center">
             <div className="relative flex w-full h-[20rem] max-w-[45rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-              <div className="relative m-0 w-2/6 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+              <div className=" m-0 w-2/6 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+                <div className=' py-3 text-center'>
+                  <p className='text-black underline text-xl '>PERSONAS</p>
+                </div>
                 <img
                   src="https://designthinking.gal/wp-content/uploads/2017/05/personas.jpg"
                   alt="image"
                   className="h-full w-full object-cover"
                 />
-                <div className='   text-white py-5 text-center'>
-                  <p className='top-[16rem] left-1/2 transform -translate-x-1/2 absolute text-xl shadow-white underline'>PERSONAS</p>
-                </div>
               </div>
               <div className="p-6">
                 {/* <h2 className="mb-4 block font-sans text-base font-semibold uppercase leading-relaxed tracking-normal text-black antialiased">
@@ -150,15 +149,15 @@ function App() {
           {/* ---- */}
           <div className=" flex items-center justify-center">
             <div className="relative flex  h-[20rem] w-[45rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-              <div className="relative m-0 w-2/6 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+              <div className=" m-0 w-2/6 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+                <div className=' text-black py-3 inset-1 text-center'>
+                  <p className='text-xl underline '>CONTRATOS</p>
+                </div>
                 <img
                   src="https://www.equiposytalento.com/contenido/noticias/0528grafologia802.jpg"
                   alt="image"
                   className="h-full w-full object-cover"
                 />
-                <div className=' absolute text-black py-5 inset-1 text-center'>
-                  <p className='text-xl  underline '>CONTRATOS</p>
-                </div>
               </div>
               <div className="p-6">
                 <div className='flex flex-wrap '>
@@ -191,21 +190,21 @@ function App() {
           {/*  */}
           <div className=" flex items-center justify-center">
             <div className="relative flex  h-[20rem] w-[45rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-              <div className="relative m-0 w-2/6 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+              <div className=" m-0 w-2/6 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+                <div className=' text-black py-3 inset-1 text-center'>
+                  <p className='text-xl underline '>ESTADO DE CUENTA</p>
+                </div>
                 <img
                   src="https://lanservicios.com/wp-content/uploads/Lan-Servicios-Asesoria-contable-1.jpg"
                   alt="image"
                   className="h-full w-full object-cover"
                 />
-                <div className=' text-black py-5 inset-1 text-center'>
-                  <p className='top-[16rem] left-1/2 transform -translate-x-1/2 absolute text-xl shadow-white underline '>ESTADO DE CUENTA</p>
-                </div>
               </div>
               <div className="p-6">
                 <div className='flex flex-wrap '>
                   <a className="inline-block " href="#">
 
-                    <IoCellularOutline  className='m-auto' size={45} />
+                    <IoCellularOutline className='m-auto' size={45} />
                     <button
                       className=" flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs  uppercase text-black transition-all  disabled:opacity-50 disabled:shadow-none"
                       type="button"
